@@ -1,3 +1,65 @@
+
+/*
+Problem Statement:
+
+You are given a matrix representing a grid. Each cell in the grid contains either a digit (0-9) or 'x'. You need to find the maximum sum and the number of possible paths from the top-left cell to the bottom-right cell, considering the following rules:
+
+1. You can only move down or right.
+2. You cannot traverse through cells containing 'x'.
+
+Write a program that takes the input matrix and calculates the maximum sum and the number of possible paths from the top-left cell to the bottom-right cell. If there is no valid path, output "0 0".
+
+Function Signature:
+```python
+void findMaxSumAndPaths(int t, vector<vector<char>>& grid)
+```
+
+Input:
+- The first line of input contains an integer `t`, representing the number of test cases.
+- Each test case consists of:
+  - The first line contains an integer `n`, representing the size of the square grid (n x n).
+  - The next `n` lines contain `n` characters each, representing the elements of the grid.
+
+Output:
+- For each test case, output a single line containing two space-separated integers:
+  - The maximum sum of digits from the top-left cell to the bottom-right cell.
+  - The number of possible paths from the top-left cell to the bottom-right cell.
+
+Constraints:
+- 1 <= t <= 10^3
+- 1 <= n <= 50
+- Each cell in the grid contains either a digit (0-9) or 'x'.
+- The top-left and bottom-right cells will not contain 'x'.
+- There will be at least one valid path from the top-left cell to the bottom-right cell.
+
+Example:
+
+Input:
+```
+2
+3
+12x
+34x
+x56
+4
+123x
+4x56
+78x9
+x123
+```
+
+Output:
+```
+11 1
+21 2
+```
+
+Explanation:
+- In the first test case, the maximum sum is 11, and there is only one possible path.
+- In the second test case, the maximum sum is 21, and there are two possible paths.
+
+
+	*/
 #include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
